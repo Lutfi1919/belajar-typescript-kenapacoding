@@ -175,5 +175,20 @@ console.log(GenericFunction("Hello Generic"));
 console.log(GenericFunction(1945));
 // atau otomatis di deteksi oleh typescript
 console.log(GenericFunction("Automatic"));
+// GENERIC pada CLASS
+class GenericClass {
+    content;
+    constructor(content) {
+        this.content = content;
+        this.content = content;
+    }
+    getContent() {
+        return this.content;
+    }
+}
+let numberContent = new GenericClass(123);
+console.log(numberContent.getContent());
+let stringContent = new GenericClass("Hello String");
+console.log(stringContent.getContent());
 export {};
 //# sourceMappingURL=main.js.map
