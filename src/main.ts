@@ -280,3 +280,20 @@ console.log(GenericFunction<number>(1945));
 // atau otomatis di deteksi oleh typescript
 console.log(GenericFunction("Automatic"));
 
+// GENERIC pada CLASS
+class GenericClass<T> {
+
+    constructor(public content: T) {
+        this.content = content
+    }
+
+    getContent(): T {
+        return this.content;
+    }
+}
+
+let numberContent = new GenericClass<number>(123);
+console.log(numberContent.getContent());
+
+let stringContent = new GenericClass<string>("Hello String");
+console.log(stringContent.getContent());
