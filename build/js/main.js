@@ -190,5 +190,9 @@ let numberContent = new GenericClass(123);
 console.log(numberContent.getContent());
 let stringContent = new GenericClass("Hello String");
 console.log(stringContent.getContent());
+const Orang = {
+    name: "Budi",
+    age: 19
+};
 export {};
 //# sourceMappingURL=main.js.map

@@ -297,3 +297,14 @@ console.log(numberContent.getContent());
 
 let stringContent = new GenericClass<string>("Hello String");
 console.log(stringContent.getContent());
+
+// GENERIC pada INTERFACE
+interface GenericInterface<T, U> {
+    name: T,
+    age: U
+}
+
+const Orang: GenericInterface<string, number> = {
+    name: "Budi",
+    age: 19
+}
