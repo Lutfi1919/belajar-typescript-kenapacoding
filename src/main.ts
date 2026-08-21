@@ -2,7 +2,7 @@
 let nama = "Luthfi Ahmad";
 nama = "Sigma"
 
-// type annotation
+// type annotation : menentukan tipe data dari sebuah variable pake titik dua (:)
 let age: number = 17
 
 console.log(nama);
