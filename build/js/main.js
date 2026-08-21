@@ -1,7 +1,7 @@
 // type referrence
 let nama = "Luthfi Ahmad";
 nama = "Sigma";
-// type annotation
+// type annotation : menentukan tipe data dari sebuah variable pake titik dua (:)
 let age = 17;
 console.log(nama);
 console.log(age);
@@ -10,10 +10,10 @@ console.log(age);
 // ___:boolean = true
 // ___:number = 16
 // ___:string = "Wikrama"
-// UNION
+// UNION : bisa memilih lebih dari satu tipe data
 // :id = string | number;
-// LITERAL
-// ___: "success" | "failure";
+// LITERAL : value nya fix
+// ___: "success" | "failure";  -> ini sebenernya gabungan antara union dam literal karena pake "|"
 // ARRAY
 // tipe data array
 let numbers = [1, 2, 3, 4, 5];
@@ -38,6 +38,16 @@ if (typeof someValue === 'string') {
 }
 // console.log((<string>someValue).length);
 // console.log((someValue as string).length);
+// ====================//=======================//
+// ENUM
+var statusCode;
+(function (statusCode) {
+    statusCode[statusCode["Success"] = 200] = "Success";
+    statusCode[statusCode["NotFound"] = 404] = "NotFound";
+    statusCode[statusCode["InternalServerError"] = 500] = "InternalServerError";
+})(statusCode || (statusCode = {}));
+let responseCode = statusCode.Success;
+console.log(responseCode);
 // ====================//=======================//
 // FUNCTION
 // ? : parameter opsional

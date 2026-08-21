@@ -75,6 +75,20 @@ if (typeof someValue === 'string') {
 // ====================//=======================//
 
 
+// ENUM
+enum statusCode {
+    Success = 200,
+    NotFound = 404,
+    InternalServerError = 500
+}
+
+let responseCode: statusCode = statusCode.Success
+console.log(responseCode);
+
+
+// ====================//=======================//
+
+
 // FUNCTION
                              // ? : parameter opsional
 function greet(name: string, age?: number): string {
