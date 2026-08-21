@@ -17,11 +17,11 @@ console.log(age);
 // ___:number = 16
 // ___:string = "Wikrama"
 
-// UNION
+// UNION : bisa memiliki lebih dari satu tipe data
 // :id = string | number;
 
-// LITERAL
-// ___: "success" | "failure";
+// LITERAL : value nya fix
+// ___: "success" | "failure";  -> ini sebenernya gabungan antara union dam literal karena pake "|"
 
 // ARRAY
 // tipe data array
