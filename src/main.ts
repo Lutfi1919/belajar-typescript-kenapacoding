@@ -17,7 +17,7 @@ console.log(age);
 // ___:number = 16
 // ___:string = "Wikrama"
 
-// UNION : bisa memiliki lebih dari satu tipe data
+// UNION : bisa memilih lebih dari satu tipe data
 // :id = string | number;
 
 // LITERAL : value nya fix
